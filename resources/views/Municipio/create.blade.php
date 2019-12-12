@@ -14,12 +14,12 @@
 					@csrf			
 					<div class="form-group">
 						<label for="municipio">municipio</label>
-						<input type="text" class="form-control" name="comu_nomb" id="comu_nomb" aria-describedby="municipiolHelp">
+						<input type="text" class="form-control" name="muni_nomb" id="muni_nomb" aria-describedby="municipiolHelp">
 						<small id="municipiolHelp" class="form-text text-muted">Nombre del municipio.</small>
 					</div>
 					<div class="form-group">
 						<label for="departamento">departamento</label>
-						<select name='muni_codi' class = 'form-control'>
+						<select name='depa_codi' class = 'form-control'>
 							<option value="">Seleccione uno ... </option>
 							@foreach($departamentos as $departamento)
 								<option value = '{{ $departamento->depa_codi }}'> {{ $departamento->depa_nomb }} </option>

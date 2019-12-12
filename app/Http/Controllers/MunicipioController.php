@@ -74,7 +74,7 @@ class MunicipioController extends Controller
     public function edit($id)
     {
         $municipio = Municipio::findOrFail($id);
-        $departamentos = Departamentos::all();
+        $departamentos = Departamento::all();
         return view('municipio.edit', compact('municipio','departamentos'));
     }
 

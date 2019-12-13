@@ -19,10 +19,14 @@
 	
 		<nav class="navbar navbar-dark bg-primary">
 				<a class="navbar-brand" href="#">Personas</a>
-				<a class="navbar-brand" href="{{route('comuna.index')}}">Listado Comunas</a>
-				<a class="navbar-brand" href="{{route('municipio.index')}}">Listado Municipio</a>
-			 
-		
+				<ul class="nav justify-content-center">
+					<li class="nav-item">
+						<a class="navbar-brand" href="{{route('comuna.index')}}">Listado Comunas</a>
+					</li>
+					<li class="nav-item">
+						<a class="navbar-brand" href="{{route('municipio.index')}}">Listado Municipio</a>
+					</li>
+				  </ul>
 		  </nav>
 
 		  <div class="container">

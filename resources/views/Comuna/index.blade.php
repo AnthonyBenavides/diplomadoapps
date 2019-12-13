@@ -42,7 +42,9 @@
                         <a href="/comuna/{{$comuna->comu_codi}}/edit"><i class="btn btn-info btn-sm fa fa-edit"></i></a>
                     </td>
                 </tr>
+
             @endforeach
         </tbody>
-	</table>	
+    </table>	
+    {{$comunas->links()}}
 @endsection

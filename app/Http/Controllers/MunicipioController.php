@@ -21,7 +21,7 @@ class MunicipioController extends Controller
         $municipios = DB::table('tb_municipio as c')
                     ->join('tb_departamento','c.depa_codi','=','tb_departamento.depa_codi')
                     ->select('c.muni_codi','c.muni_nomb','c.depa_codi','tb_departamento.depa_nomb')
-                    ->get();
+                    ->paginate(10);
         return view('municipio.index', compact('municipios'));
     }
 

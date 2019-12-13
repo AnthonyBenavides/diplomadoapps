@@ -11,14 +11,24 @@
 	
 </head>
 <body>
-	<nav class="navbar navbar-dark bg-primary">
-		<a href="#" class="navbar-brand">Person@s</a>
-	</nav>
 
-	<div class="container">
-		<div style="background-color:#333; color:#9d9d9d; margin-top:5px">
+
+
+
+
+	
+		<nav class="navbar navbar-dark bg-primary">
+				<a class="navbar-brand" href="#">Personas</a>
+				<a class="navbar-brand" href="{{route('comuna.index')}}">Listado Comunas</a>
+				<a class="navbar-brand" href="{{route('municipio.index')}}">Listado Municipio</a>
+			 
+		
+		  </nav>
+
+		  <div class="container">
+			<div style="background-color:#333; color:#9d9d9d; margin-top:5px">
 			<h1 class="nav navbar-nav">@yield('title2')</h1>
-		</div>
+			</div>
 		
 		@yield('content')
 
